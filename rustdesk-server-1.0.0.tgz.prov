@@ -1,0 +1,59 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart (#1192)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/rustdesk-server
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/prerelease: "false"
+  helmforge.dev/maturity: stable
+apiVersion: v2
+appVersion: 1.1.16
+description: RustDesk OSS rendezvous and relay with ordered identity initialization
+  and persistent recovery.
+home: https://helmforge.dev/docs/charts/rustdesk-server
+icon: https://helmforge.dev/icons/charts/rustdesk-server.png
+keywords:
+- - rustdesk
+- - remote-desktop
+- - relay
+- - kubernetes
+kubeVersion: '>=1.29.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: rustdesk-server
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/rustdesk-server
+- - https://github.com/rustdesk/rustdesk-server
+type: application
+version: 1.0.0
+
+...
+files:
+  rustdesk-server-1.0.0.tgz: sha256:c88c821318c6fbcd9d6e62afeb42f42fbfdc5ce9e00f80832e72a6338428f344
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqp/+oCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnaKdTIX9L8VYk77J6/fNcqQ8/WH8bYIHpltA30Q+hN0YW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAKM8P+wV5u0fUY7EMgAb1QvBeCBN0IqW8
+ZLMUnrd8u5sG9NMOSUa8qcPNXbwWylbXCvBD9SMYI1grkEXgYOfaE2zLS9RvLn05
+lQa1gYLhN5ywsBMsZWycaQLyzrSPKJag2irfnYkZbqp8tJoSl2eqYaUD2fUFVD4D
+CzaVLt7tI8jEbQt5xX4MvFMglK7TDze2pbPodnUfsfOroo4fEcZWRh0xM+gyOqjP
+F80hLV5/vVU1NMz4AdNK9QFJHzYQCaeKA0Hhr8bhYJdgXrXTwcAz6fgcCFNAafcq
+i8LI2XeB91qA0pkc8M7pRq+inYvm/Tz+GZWl1NwS8ClOwrwpo9lzfqQgyJFJRa68
+YwTkYiYpH6YIZ0TI3VKfPpbtQTp0lMpzAq/kVs905113XO2ZLQ7EmyN41CUyqrCx
+jv4Fk0mRY/XxJOShfA/D7nUxr3/0AS5evUwpA+wvcpJ6DV7poUcSSrOPXZBUFxP6
+awTpe51agTJD7Rn7GFn1AICjrRRxR7jIvoWnyapiSOBfg/EYNUhhATakdvNEjGIW
+jF52a5yiTdzrefLqU5gbClfJWpr8LWQ0LEkDPs56SBQRjrI2CiAO+LmSaRuoc0yf
+whxsC4as9PzzGgmwglKuGFCNDv4waqVcXxszoHRGnYnkxGYlHgLE4liC7k/U2ZIw
+5sg2fYq9GSjxB4TA
+-----END PGP SIGNATURE-----
