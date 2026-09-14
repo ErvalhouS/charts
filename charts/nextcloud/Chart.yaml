@@ -3,7 +3,7 @@ apiVersion: v2
 name: nextcloud
 description: Nextcloud file collaboration with PostgreSQL, Redis and coordinated backups
 type: application
-version: 0.1.0
+version: 1.0.0
 appVersion: "34.0.4"
 kubeVersion: ">=1.29.0-0"
 home: https://helmforge.dev/docs/charts/nextcloud
@@ -18,8 +18,8 @@ maintainers:
   - name: mberlofa
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Initial Nextcloud chart
+    - kind: changed
+      description: "BREAKING: add chart"
   artifacthub.io/maintainers: |
     - name: HelmForge
       email: berlofa@helmforge.dev
