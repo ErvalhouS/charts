@@ -1,0 +1,72 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 34.0.4
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.0
+description: Nextcloud file collaboration with PostgreSQL, Redis and coordinated backups
+home: https://helmforge.dev/docs/charts/nextcloud
+icon: https://helmforge.dev/icons/charts/nextcloud.png
+keywords:
+- - nextcloud
+- - files
+- - collaboration
+- - webdav
+- - kubernetes
+kubeVersion: '>=1.29.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: nextcloud
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/nextcloud
+- - https://github.com/nextcloud/server
+- - https://github.com/nextcloud/docker
+type: application
+version: 1.0.0
+
+...
+files:
+  nextcloud-1.0.0.tgz: sha256:d503c2f21fa796a11a409b0c8ad975cb5f234652e5722e5932a5eb82181db063
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqDhACRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn8G4188fD3CTzC+Mxg+u1YJ8fe89bKvlqkwqhqaoaGHwW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAsSQQAI9MBYtKopmy5qUo2MqjipJ4+Tfo
+QS4jOyvjt1NeMpCiab0haiJMoYpmgi6vv9OKu6rp8VZKrsK9RKXOC/hjM14BCaI+
+Ht+jbnoKGGZe2t6Ufhxzg4a2+3PsFxGCDvB/ioUvfA69mSJC4zpXDMMtUZj09vKK
+sy/3cBaLyP2kKuzkYMRbUJ3gEM/ngMKak6HBWB5JGq2YPc1BWt4Y2JbBgEZF0+C+
+a5esM8iikl+Q0mXR5iVQidmoczgQm2C4n97/8D29FGNUAaU8K7U/7ndX+7ogXbMt
+sx7PN1LsqpG5W5x8KmXAmWN3vC0EAJ+bcaHL8RL4xdtpVQNnLfH7+AkrHBMXEEZq
+aYwrMax/D8yjdToUL1CJmml95n/tQTTgION8ybyQ3XhfJgBmwMG6pC7NySSry4IB
+35ww2bulABDVlt7s+hfzx5MfdFEM7AnOymTB+bR3/fxIL0W9QLfP1Kf/KtsCP9gL
+wQ3XqYp/aP9p9XdwoV/h9v7P5oRq/F0H67sVlNxLnrgRd7Y4E77jznXV6ZmnXxHg
+5KM5OTFBs+hnDlMgKnASZ0n+TOB41lxeIGJ3VKSrfobItrMnMgffId5g55ULSoA5
+Ylfelq6ntwmroosmvifc9agycmLJWFKdRlYkdt1CoEulaGE+BbnGHJRG1OAkd43d
+WMZXU758MuH+Wnv+
+-----END PGP SIGNATURE-----
