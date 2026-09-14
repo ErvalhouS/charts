@@ -1,0 +1,84 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1195)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.elastic.co/kibana
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/kibana
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/kibana
+    - name: Support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/elasticsearch
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 9.5.1
+dependencies:
+- - alias: bundled-elasticsearch
+  condition: bundledElasticsearch.enabled
+  name: elasticsearch
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 1.1.8
+description: Production-ready Kibana with secure Elasticsearch connectivity, Wolfi
+  image support, Gateway API, and dual-stack services
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/kibana.png
+keywords:
+- - kibana
+- - elastic
+- - elasticsearch
+- - observability
+- - analytics
+- - dashboards
+- - elk
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: kibana
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/elastic/kibana
+- - https://www.docker.elastic.co/r/kibana
+type: application
+version: 1.1.8
+
+...
+files:
+  kibana-1.1.8.tgz: sha256:45ab2344591e9e0252147af27ccf047ccb2954750fd234df59f464ae21444ce5
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqDyECRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnnH7s5UYsOaTzMaNqMv70hxsdbwVdlmTTOONSz2Ev8SUW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAUUcP/2MQ3Gg4t7Q1oAEFgxKsWSGfiDwZ
+cDz44IY3eDLwPoZFGcimMRFkXU9mQ+/cICIGxf/C9csmFDo6qFqqZqcUtmqxpP1B
+BPAuwIB5OQAryG1jwpAjfCc8slpu7srEw1mlt/U29Rt+qZ96dzsJFO4rDsH0zvj/
+sVrwph5kSAogf+c6jPSEQEPLzgovijSaZdfV3I3AiUkh4DeZca1/FvNLaCKtHtzf
+/59Izusq9qFkeViPwdxnWDc2cN7tIwEDCo0cxtIacxkMXP0ovWjw/dKdyu1E403j
+EeeN9ieWYfGOoK/hzbBdoqKEWTlVRcmGPjNKvf5YSw1igM/tZThQC9EzNql85J0u
+7LgPrLvEhTRXFUSBKrtVEhE9RwdBuA47Q/8oEY1C06gcEO+qWutZdSZKD7BH3XFw
+c7/KprGRFFWCE7q6MvSn7vKNRBStKpAJRjxQWKKEAsnx+N82BuOj55fRj1iLdJ/g
+agNDph3nmwgMQ/e9OVftrUHgKmqIzE84d4ndQEddBcnBCvzRxVnhFS5WfI4o+5np
+SsIDBM0Ipj+fppr6v6DBjKoTYvYtW8Fq3N5dih2Ab/sgCvHFtk9TR/sUTQRUREBi
+lvJ3UDTSwlyTN9q6RxI9AzNr89a/Mfpkk/N2KjtVC7HGC3aNo2V//ltwTvKBg/nu
+oMYls6s9VWHKuyc+
+-----END PGP SIGNATURE-----
