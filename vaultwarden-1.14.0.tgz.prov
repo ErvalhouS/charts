@@ -1,0 +1,81 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: security
+  artifacthub.io/changes: |
+    - kind: added
+      description: "update to 1.37.3 and support additional egress rules (#1224)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://github.com/dani-garcia/vaultwarden
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/vaultwarden
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/vaultwarden
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.37.3
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.3
+description: Vaultwarden for Kubernetes with persistent SQLite storage and explicit
+  ingress/domain configuration
+home: https://helmforge.dev/docs/charts/vaultwarden
+icon: https://helmforge.dev/icons/charts/vaultwarden.png
+keywords:
+- - vaultwarden
+- - bitwarden
+- - password-manager
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: vaultwarden
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/dani-garcia/vaultwarden
+type: application
+version: 1.14.0
+
+...
+files:
+  vaultwarden-1.14.0.tgz: sha256:973af1a63ebb636a1c86f44b2d64750d7bbd81c275c7b702917d46adfd4f1322
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqWenCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnCxiLiFH51+HQZYuFgBF9+4up+Y7VaR78Fntpzp7XqvYW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAi4sP/R74EqzCkFCrGlfE1Z616POHySIB
+kyJoPf+40I+IBRNEe9qaW6Bh2TNSyAxL+cvpIM8aQlblYidaASA5I/4+U09Ul6qQ
+5zSyHGpwwG+I5lp2Sxts6Lf2IY5e0Rj9fHQhofK5IdFl3Vj/SFXnN7iMsrnM5mks
+ojsT1kuy65qp+dyLQYhpZ9dV1hzQFGttuaKnMxcURkawqK8VyMzzn1lvOwYfKt8d
+FWpdIQ3q/R2lJmigG1bLLqx+1nvaxM+i1ge5kvu+eF8UbrNGuBFZt2Y/lxj/vj2Q
+cqxl8M41MV9DVAfuyfHV82QPTUpREaoLT7Vgmv71wWcx/HFAy6nDd/4Rxo3Ny6wm
+f2e+UoJJQYGPx4q6eYn/RztxBgEtWrtv6pIFEkS6AKw8aZH2+iP60OBQi5+aCWLx
+Us05GAIyYdCe9rm9G3T7C9NEnF2tG63DEm4gBGZgFNiRaxRfS0AuFk52t/t61FFy
+yxWgXM28tLaTW4bnREcT1tyhbzZuyK1IS+9rJml+2COp5u0Ru+oSdBiejaDggTgW
+yhJrig8d121xxdzFbjGAxL9UYc8Z2sHItJNckVtZbWfK7abdPSMLbhpisKPtTT0c
+e4OoytNFc9MU3kCSos1saSxFWrNi3SxyV++npUsrFT7HEbNZPgakTvicIQxuUCgE
+jr5MEp1NGIaztFG+
+-----END PGP SIGNATURE-----
