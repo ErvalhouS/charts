@@ -1,0 +1,63 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump poznote to 6.86.0 (#1226)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Source
+      url: https://github.com/timothepoznanski/poznote
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/poznote
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/prerelease: "false"
+  helmforge.dev/maturity: stable
+apiVersion: v2
+appVersion: 6.86.0
+description: Self-hosted note-taking and documentation platform with SQLite persistence
+home: https://helmforge.dev/docs/charts/poznote
+icon: https://helmforge.dev/icons/charts/poznote.png
+keywords:
+- - notes
+- - documentation
+- - note-taking
+- - markdown
+- - self-hosted
+- - sqlite
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: HelmForge Team
+  url: https://helmforge.dev
+name: poznote
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/poznote
+- - https://github.com/timothepoznanski/poznote
+type: application
+version: 2.0.3
+
+...
+files:
+  poznote-2.0.3.tgz: sha256:c52efec88f9a12ebbdab439ee2d0937d17978870bf17e3a7453581861659505a
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqWb8CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnAkNZWxD6M7T0LRTM104adrTJ2az/21+3XZwxfNClDL4W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAASKkQAKzg+j692hiBuWvhtc6FefVWO2Ri
+StcEYDpB9ddpf5QI/+O+QMzDrbOSsQjQMwpdeIC3Y5IiLr/ozBb8EW6Qn66NLr6C
+Avn0kXEdiFE51qYiQ1hW3n/S9I0M8lB/0TUbKTngL6Dmc4yJEqmyZ6VTuWDFubLM
+IkVgu//vzinr/ZaAsGiQNZ7Z1zBfLnWSMyVJFj3MRM9mg5NPGI9nSElwQxJuEKEp
+F9UlknAdxOo1FPVO6MlWQiTVvUR9LpuI7dOqUOcGJISBMC6HMbvB7JwUUsehgM8C
+8NuUlJiaoaEqPbzRAz1pOrjCElJES0v4g+G0u3jrENj1lZCZWI4B2q+ae2QZEjww
+QpiVLxWD7wm54b7aPTbRc2k3/LJ5q2WbNIJC4dHopxUMLhPj6weKtiJJ0gl2B3PK
+WakQbtsXhROGuEIjDHweeagpS0j0agjaqVuvpuC+gB4IBcIa7E7EC7HjEERlaqNV
+wOODz7k5cUqcCPKiE8W/Z0IxiDPQRHKgJ0Boo5wWiLNqpw71CYLgNCIgg7uCitSD
+cxxMGZVXx5EiYvxkgqGjms7QQxk74SilTSY1eSjzgSC/kpD+ZHT5BT7wIQ+2n4/u
+vHB7ZQH3PAfOR7Xd7cdMb0zSP32wp3qx5pjh7IG0uCgx8fNEIs6maNQyMa8ZyPS0
+zMLVhqAXHGx/IMC6
+-----END PGP SIGNATURE-----
