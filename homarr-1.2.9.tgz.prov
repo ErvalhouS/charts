@@ -1,0 +1,84 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump to 1.77.1 (#1239)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://homarr.dev
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/homarr
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/homarr
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.77.1
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.3
+description: Homarr - modern application dashboard with SQLite, PostgreSQL, or MySQL,
+  Kubernetes integration, and S3 backup.
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/homarr.png
+keywords:
+- - homarr
+- - dashboard
+- - self-hosted
+- - homepage
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: HelmForge
+  url: https://github.com/helmforgedev
+name: homarr
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/homarr
+- - https://github.com/homarr-labs/homarr
+type: application
+version: 1.2.9
+
+...
+files:
+  homarr-1.2.9.tgz: sha256:a978dd0b67fc841df77b39cd6a583cd131b836a6de09298cbba06151e82c3a83
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqXh7CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnbKV+f3imwTb48qxSREwaVYwVCN8TQXur3UedyN8/sFoW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAtOsP/A1WvWey3dSzlzN3dPDboaMBfsgK
+u8UC+chB4cvHA2vcUzrlgzAizKC4VcilG3Mhsmt0DbIpQUNyJmgEhPQuNPsDzGuI
+zoaswwD3HwGSOvYJqMrF+lGaqrc/iN7tLNbjHIQ+UDTkz64IfX65R+s38Pqt56rJ
+7WWJFlp+EPUkq39V8aTH70e8YTgNiec2C2Ai47i3imb6aSZ7+dt+OytrZXZjnkjl
+p4+uXD24TtPOX2K0GdbbcBUxV1hq3gtoiaiqfut+1dCF4Rv189OEIP8A97SIOkVP
+e8EJQEsdTgFHRCLRRFag7AwTzSXWp+A78U+NtPVrg+N8BAUqRC5v/tClt7xTJEpA
+fA88BKttemtIgmo1+JUQ4KN5dH+7JPZylGG27mZVdYCYxXgZK/Pg4TPU56C4GWIr
+RHMcmMnnL6486MIGUGopNYACWpSBrwabZQZwKoHnevH+CkMudeZ2MCMFmMbM64Uk
+VabL8mCkLbDG++DSCAcckplESiWvNUV0V1eQe8P72VGUqMWWkSvKdO+3rILDmRg+
+zpYWFumC2KHZSuSaURnQN2nwh1qXpm41l5ZCEUjkLz6wudIoTjH6XZIDRZBqt1xD
+IXo+qNySyjZuE6Mbm+iP38XxhxlE0vUzafWMtEzb/5gyFT0d4OlS1vCtBV/JK+dz
+HEuWq9Hn1RTKLtYc
+-----END PGP SIGNATURE-----
