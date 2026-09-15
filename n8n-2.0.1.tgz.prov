@@ -1,0 +1,85 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "upgrade upstream to 2.39.5 (#1246)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://n8n.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/n8n
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/n8n
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+    - url: https://artifacthub.io/packages/helm/helmforge/redis
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.39.5
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.0
+description: n8n workflow automation platform with SQLite or PostgreSQL and optional
+  Redis queue mode
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/n8n.png
+keywords:
+- - n8n
+- - workflow
+- - automation
+- - integration
+- - low-code
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: n8n
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/n8n
+- - https://github.com/n8n-io/n8n
+type: application
+version: 2.0.1
+
+...
+files:
+  n8n-2.0.1.tgz: sha256:a4f8dee8a3a29cfa91e97a3775e64195fde4ddaa95b5a1272e096da1c3e3086a
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqZmRCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn00i3/nepgAN4punRH9n2zIZIu4UyPCZ0TTU0F7JvrQ4W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAOhQQALrkiqqno1UYrbOgIz4Wk3Ajd9OA
+pEvZqwsOyBNNtXNKrAR5TD7bTF+f2qsHJ6KVZI7xV8wUv22gZC4yw11hi2/XqVMk
+Kdd7yxN4IbRzeNjkgQu4zE3zu9duAQuutAHQqwymI+NXXg0cCB20Z+0AdNRTJqpX
+Ep8+lPvcENc/JGX48+wbg2tpMVwPVstuId1pLcf088skXiewczvlKB/5lLptOSXx
+f2YoWoveLLLxMtPZfeq8YaQL81WthvqzUAUwsHo8NaIuUsYTN1EHgTiPcy2ioPPa
+LrunyQE5M3mGyXorkqZ44UHboKYL5GfinXNzCQ1cCR4YMEhJODIEPhd77olpOQnY
+eDCF7S25jQbBM/6L3PTqsu5V8Y3ZOHhyfwPGLIHwOnc+uAXsirsqfkYTka8zmrt4
+L8NTgOPKQtNmlQzktYFZjOxleAllwbMIKA/b+YoAI6aBt27bSEqBEWtWk93jPP2g
++SKvHvLBkSuuN9zgkz1DhGDLByKHiTqkF4WCCr8CHUy8EjJ+NbuUMNmfWlHbXSHV
+pgEbwpJQW1Y65gitk7CbSd+VIDCfqpSJ3fycixIwCxvrXiMSBUFmvTqMoRAZGNKR
+nE1Tlwxrtjl6F3+WLTlrT9AzcfcKDqKDo7TPEc0nphONUtwSvO93Yi9+r1Z1XzWh
+yexRGg7j6J9LAX0r
+-----END PGP SIGNATURE-----
