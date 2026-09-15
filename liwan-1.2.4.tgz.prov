@@ -1,0 +1,73 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump to 1.7.0 and document proxy migration (#1237)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://liwan.dev
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/liwan
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/liwan
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.7.0
+description: Liwan ultra-lightweight privacy-first web analytics with embedded DuckDB
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/liwan.png
+keywords:
+- - analytics
+- - web-analytics
+- - privacy
+- - liwan
+- - duckdb
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: liwan
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/explodingcamera/liwan
+type: application
+version: 1.2.4
+
+...
+files:
+  liwan-1.2.4.tgz: sha256:8a682fb2329db6bb1b8614985148d907f305cd3c10154ea1c0dd0cff6a48aea9
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqXUOCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnmbnYY+0O9uq7aiiMJUVL1Bp3ak8s/f9CeiA2GnfbH14W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAMQIP/AgJFNr7RmAP6NV+d609FP5W0UMT
+arulD7lS1jbEGHlCErVahYl2+bmyGNdmbpxIBFpJ3GiY2uXH6jAfiz7C0Wn6Ye8z
+BL14JxqzaIoZOCn7VwMzGl7Y9BFu6uFFyUBeVXDegYwL/8/V+WL5hT0Sd4trzbq9
+YiCzVqxFEqy/FJbJFCvRBfATVHXQH6SOUIqu9B+mAz4FnMBgkDP5oLohsJXzeogs
+H3uFITIoQdOQiaSaVkoNZ2Y+yY3JIfe6FszduY82ryaDFO9z8AuNgYWx1dFn5BUz
+JCx3ux/djxj71U36IFG3mXVrz3Q6z7c/LgQp8XJ3KL0FI1U3jvro54Y7VN84EKlx
+CZiwtDILvlLVXNI1UrlNoE3VEpeF7jzfCOcQZw+7EI2EUxJYgg5CnuXfwE1tdr9S
+curiD39TdLTgFKMyXNzPJ+ISaWLVBK+E+3B580r17BgawtIoh3ewYZYW8xKMjzUJ
+eTEazBnhqgclFU01E5TgixktFvf7UfhDJg64Ld+WekRX/WRI+TckacaafLeFU53G
+XHIvww3hff4lQzc4R/Ae9tJxPyTZrseVcL6SY0uOzMawzza4NarfMyS5B5yVGGsH
+kLFZD761w/hy+/gRd05g2sWjhc0lhTouLuBY/Iq81TxXF/Rbzmvb5rGe/0xP+7GV
+X2BQqGbd9GKxCwB6
+-----END PGP SIGNATURE-----
