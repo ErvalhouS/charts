@@ -1,0 +1,74 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump upstream to 26.8.3 (#1245)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://clickhouse.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/clickhouse
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/clickhouse
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 26.8.3
+description: Fast column-oriented OLAP database with production-safe standalone defaults
+home: https://helmforge.dev/docs/charts/clickhouse
+icon: https://helmforge.dev/icons/charts/clickhouse.png
+keywords:
+- - clickhouse
+- - database
+- - olap
+- - analytics
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: clickhouse
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/ClickHouse/ClickHouse
+- - https://hub.docker.com/r/clickhouse/clickhouse-server
+type: application
+version: 2.0.2
+
+...
+files:
+  clickhouse-2.0.2.tgz: sha256:396694c19e6ca255ef43c336768c049500e051d2335c4380b96ffc17115b620f
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqYy4CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jnpfz20ix1bNrwD1ejs7a52ZfqVVcrSSp0vSqm939THBkW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAo9gQAIOzB1rHrN/FK0LTPPtBtkHZ9PUd
+OWjJonSwuQBjjRujuMdeFqwDtH3xccVV8k4IM2QPnl+tD2ujzdH4KBAc73yNmQ3C
+3ZC38Ha7e9LKAjyuUCninfS477EeTP0JY713/h6KadER68XcME66iL4X1NcxSRLL
+2ME7l867nnedOGroi4M63aUuoQBpDEZHfDiWF2heApxTg4x7fT0Uv7B04ne6NFpx
+tfhWVb8wKXBI9GEfaANlrzYn96eQWjvceCZpf7QhfNPqnE+6JRRsTlZFYCxlSq6G
+hwE+J2Eu4fHGxZ55xeqyQZPj6EPddEIHNiQPXpWXbJ+tfdUQh9ONP2x3/ZDaKOON
+RjmGsqBpaCCdjQEvDzeWF+EMB606Lnsyq4L83BQmAmlzhifeIGaVPSH1UtayMXl0
+zRuNvtkheXWOj3ejWnecySwNe+h+fCvWZh68sN006zcaJLZZENxQWdLz6y7MDL58
+e1L8v06dHy6AR0M49KnEEYpYZQNLCc1uk/3Zg5YzS2lAXWc68ZZolxa5jq8Trk8i
+OA91aYax0h4a4FyB4xBMXupF7Bsrw4SKlzORjopwscFB8gqMp5zImh27PuD6hSev
+jiMgoUWAddIggm2Tbc1R3IYANmnWces8BJ+2e/ccwMWdOjHxQflvnHsb/D6OGUPy
+CSCTR2MSud9buc4m
+-----END PGP SIGNATURE-----
