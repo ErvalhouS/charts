@@ -1,0 +1,69 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump to 0.70.0 and cover sso-only mode (#1235)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Source
+      url: https://github.com/afairgiant/MediKeep
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/medikeep
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/prerelease: "false"
+  helmforge.dev/maturity: stable
+apiVersion: v2
+appVersion: 0.70.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+description: Self-hosted personal medical records manager with PostgreSQL persistence
+home: https://helmforge.dev/docs/charts/medikeep
+icon: https://helmforge.dev/icons/charts/medikeep.png
+keywords:
+- - medical-records
+- - health-records
+- - personal-health
+- - fastapi
+- - react
+- - postgresql
+- - self-hosted
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: HelmForge Team
+  url: https://helmforge.dev
+name: medikeep
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/medikeep
+- - https://github.com/afairgiant/MediKeep
+type: application
+version: 2.0.1
+
+...
+files:
+  medikeep-2.0.1.tgz: sha256:2ac03af5931ca6baa9705689e88b7b8dafeffd6db2e1cfd710dc919d9be74822
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqXLTCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnplNOlvixGgOw/DId5c96n4QkA7AQZ7R2dtWlcPpTLnoW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAe7QP/14nI9YXtdY7/zcScyTGfgbNUlzF
+OhtRLJ1t/u9i9RykZbgExxYrPMit0YoNDZH4iex5TAYUBtItxLqsPbVEi3MAqIjU
+5Xv6ETcTJbkhmn8OZLFidE+Z2bwsI4ThSYs0Clmya0RHvG6tnvbZWZvddqtJ/Hnb
+MIJ8RYoxMDppz1ppd37ajTv6gu+Hwnx7RK9oUIQrKTgT30F/xbhaCWRwOOCcvbJz
+0QUcYZPgAIeVkKMUulc9oyRtfeX5mwCT9GlpGKHG7EgXMf8R1iAdAqNwKeTSvnGz
+R4brLtfnIkf5eoOVg/ioNOLuJGSaxBjqqZI6uIIo3i0XmWlTgDuk9EgX8S4Yjymn
+2Zwydl74Nf7trSshArSq+QqvZH/vhVhgLRZgY+H89J6V/LFQIM1JfSbV6aofFyIH
+8YS1jTWYt1caflV1E47+RsdIcKtW4+pjEA4ZeDV83SU4ep7LKL7j2a/79g0Fb2JZ
+ko9Vc3bwfcxpTAV+RnQ1Ypbe5rczpYbOdWMoJE8Ax6MQotw/KIFyWdOm6LeqImWu
+GaozBukhXTM9ocrOJ1GG97wHxbnXw9Cvk/0wt9Oy4FRAaixmyww55GB01Ll3ojqS
+HgTZTxo74X5unvfnV6nfC+HAyx0x29poOC1d3YTqx+Jk/ep1RWGDWAhxiXGXBnLp
+6xJ9xyq5h5PMekLf
+-----END PGP SIGNATURE-----
