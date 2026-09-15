@@ -1,0 +1,73 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump upstream to 0.60.5 (#1244)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://changedetection.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/changedetection
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/changedetection
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.60.5
+description: changedetection.io website change detection and monitoring with optional
+  Playwright browser
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/changedetection.png
+keywords:
+- - monitoring
+- - change-detection
+- - website-monitoring
+- - notifications
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: changedetection
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/dgtlmoon/changedetection.io
+type: application
+version: 1.1.16
+
+...
+files:
+  changedetection-1.1.16.tgz: sha256:488ba003e5f5ae7ee2e9551fcf747c50f6ce90ddf44908d2f1483db00ebe2bdc
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqYpvCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn6zr9dHzWHadJM+0oEU4BlX9CocecacmQ1NlM9wZzKCsW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA1fkQAJYBoG7mGkZX86jceMQ8DL+sUrbO
+f4vk+LztJJXmG7hlU8Vrgnbec1Q1npfMtyatJ0VNX9MsHvB0hsA8gWaIbj5+qxcP
+OcN/jq/JTG2G9IAArNWRuji7xdebE9h8jGoNz0SnjHNm/7afMwksprsbae+YKRPA
+eiFl7kck86cRLR1Pka3GD4uVTQkdG3b39hLawA9g7Y5AMXvoI4VYZcTPvzS+nMO0
+0XQSdWbzhwK6STtTMK7M0b4csYJ/0gsAeb1p4p4CXG3X+nGvpKmBjJGg2Njz3D4r
+yhOrGzJG64JW/oRZCeO6MOERMKtzhfpgsAY00rl3wKVK0RNp3S+PuHbVhxUyaaEB
++Xtmnw0L6fJwcM8f6+LPrtkrml9qzBVSpBJdH2ku9afh0vqK1jOc4bLG36B54DDD
+3AYhqMXfybsV8RL6b0frOo93XcCM8v8sLFbb+wnX9tqjvrm5qFz5Pl3P5s1wuRj/
+5huWi4v15vh3iO3X3v8RsMfKwytfhAzabIdKln7prscIbTPctOt/PD0y/f9kGBw6
+aV3UGR3q3UXDn7XcpJnpV2rrtr3cDr6YQMG6Q5Bfd2tgqeFGHRdYYyj0cxbfXP1z
+uRLFT2ZqPCkyMwdZaeI069ea8QaIn68oyR+xoX5Egqwle3I1HwLO+afXT+tHCu2T
+dmnABtiYDyGJqKo9
+-----END PGP SIGNATURE-----
