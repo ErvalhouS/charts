@@ -1,0 +1,78 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump uptime kuma to 2.5.4 (#1225)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://uptime.kuma.pet
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/uptime-kuma
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/uptime-kuma
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.5.4
+dependencies:
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.3
+description: Uptime Kuma self-hosted monitoring with HTTP/TCP/DNS/Ping checks, notifications,
+  status pages, and optional MariaDB
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/uptime-kuma.png
+keywords:
+- - uptime
+- - monitoring
+- - status-page
+- - health-check
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: uptime-kuma
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/louislam/uptime-kuma
+type: application
+version: 1.5.13
+
+...
+files:
+  uptime-kuma-1.5.13.tgz: sha256:9c4bc43a13fc8959a79ea84f51adb97f4a2ae75bd1e51fd08f5c981d978870bc
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqWacCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnKcFusD7irF4d2qtl7OWcnM+sl17YsLGyxU4Mqtj5Zu4W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAAHEP/RrcElB4f0Vr8mg78jR7qZCLkJK3
+Pf/OZ1zX/47d4k4BSAzZnFrGmFjFNAiHPjob/BUkSomrEEMhB03vWujTDtF9lsyD
+DKhjslywFR2jfO4vqnm8p004r3shbzCpgwsv9uKcTKI3M8s8A46UMxAnLp0kMQQV
+cYStEPZCAE7z9qVh2xfGW79x6EcxHSaITJ9hdDD6S0b1ZvDF0SCmfF6tNbefojMy
+SU3cJLdQyVEaxdfPhO6dJ6w/jc9db5B78gFibkM/wpIwCj8eCAhxVrSHjcAa+rIL
+dTejMlk7orXDpaP3X7/1XxAxEU096yHn8+J/pllAPLaUFdxlBv203/RsQZut6OIp
+m+PiTjDGZuYzbS+Vju9G9zwyEvI3VKu9nABm6U+ulXrRv6HFS7DcMkm+IYemFagz
+qXoCO2dbAJXuvo8RPL7/5UQJPUOj5ItqLt/L98hLq+V0APMJxA/di260SB0iDaZM
+ppEjkOPnPZboTVKKCyaxmmgRwrI63p/qe3ndyYbXlI69OJZQ9ZT6a7XW6upHd0X9
+dtWdTV1VnNDYFmMCXaLAvEG4R8BuSOAXarNBnE7/sErlCjE6NtLK1OBCM9MayGIM
+YD+LyOEZlkUz5p/Zpt/MlTBp8jAIbC7uVDtyCFht354Mvz2uZvSJ5f/WVsv1cox5
+PcrsgSw9VH2Zz7aF
+-----END PGP SIGNATURE-----
