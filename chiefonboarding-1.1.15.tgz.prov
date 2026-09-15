@@ -1,0 +1,79 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "upgrade upstream to 2.5.0 (#1247)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://chiefonboarding.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/chiefonboarding
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/chiefonboarding
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.5.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+description: ChiefOnboarding employee onboarding automation platform with PostgreSQL
+  backend
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/chiefonboarding.png
+keywords:
+- - onboarding
+- - hr
+- - employee
+- - automation
+- - chiefonboarding
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: chiefonboarding
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/chiefonboarding/ChiefOnboarding
+type: application
+version: 1.1.15
+
+...
+files:
+  chiefonboarding-1.1.15.tgz: sha256:a21c85d7c1e5b86bb2ba77d934068338955255a76e1a08000ef911d948c77428
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqZOdCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn5ryc9aLn96GTvokltfigLd25jRoKBHc4VSwiJRE9D3QW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAi5IP/1sPdSRwEBVIUaS3akKXIMBzTTsc
+iacGHHhQeaxlNKDaby+YYqawlPciLaClYtHKvufvIyu4u0zf+roAP7wWDygoTK+K
+US1u2WSLHfth33iiBJX7sL97ZIsR3o5rXHnq3E8jqKms2wvwkS0ywEvAWBC1W1AP
+CX8pOvut85LP7pMQ1vve4Zo9z9bvA4lXiSILI8j4cX7TMUs1fADY2kbYS99Ux7V9
+mFhfzKEKLHbpwkuhHx+jUZ2pBXk/iBzlsjYcOY0u8+z2TMOK94W5mss64RoP2/mC
+seQGiDdW53KBF9MDJXr4YVTkJMRhPH3ez1jjitUi2te+rIA3aUQjSu/o0LTyYJCX
+vSsxtKqw90CwQbC+aUyAi8+EB04nSHY62o3t+76dguJ9fD4DipgzyCrxoO6rcmBt
+ntnYmSQPCh43bH/BC+8NP7uC1uE8+Rm4w3bXFIzqO8rTSUJrhBJJs68fe8HujL/j
+55+WoNNXX3jUHRgho8djK9gMIiEWndoIDCBwyhjHoxXXeFMUsQHI/3AMs2saSfW0
+YUiKq252IKrVxHU/Yhnm6mJNaVkRxJ44b/xFplbfvjAHDjsSgLAi2k72LT/punVm
+w5NPP5weeHqElpiF+vsK4ivAq/n5xpeOJ4iNbwS4PlvW2y2oOkdP9U6QEGU73Att
+lknj91T/xJ3aKMTm
+-----END PGP SIGNATURE-----
