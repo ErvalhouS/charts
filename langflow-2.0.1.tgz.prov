@@ -1,0 +1,70 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: ai-machine-learning
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump to 1.12.1 (#1238)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://github.com/langflow-ai/langflow
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/langflow
+    - name: Source
+      url: https://github.com/langflow-ai/langflow
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.12.1
+description: Langflow visual AI workflow builder
+home: https://helmforge.dev/docs/charts/langflow
+icon: https://helmforge.dev/icons/charts/langflow.png
+keywords:
+- - langflow
+- - kubernetes
+- - helm
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: langflow
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/langflow
+- - https://github.com/langflow-ai/langflow
+type: application
+version: 2.0.1
+
+...
+files:
+  langflow-2.0.1.tgz: sha256:112b2d6ee7d0db186f56091f05ed3003150027b8288d266b41a59313c1e759df
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqXdxCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnK0HyWowEAE3D6bc1xFEblV83XiSZ3SN3P1g6wKkJ5UkW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA4OkP/0B37jWBG96IotPaoklOp02wfVkC
+hVpTPhX4rkDT5yfcA8sL/0HB/+jpLR9p/L12qp+SwKTYaaEUahoG2nEsqhSyl2gF
+U+Kb0Gj1sIojqLQBKeN30+qD6i+5RYRHduVfIzZNX8uhhbVRwYps5W/hzrV+A5ZS
+iZ39xmq+54hNJwpnJZj3L8TWNk9Cvr52Jad88sQVPB3SDdOvhELQwuphBe/n2Hbq
+Cn4V/YpuO7WoE6ePyqMyfBDcNDopVzs68lyHpIKjdplfbgaSFTunpMoIJOdAQSMD
+pUBjqRV+HiT8/jEuncweVS2g6z5hsu34iTmK4oz6YW5cm1KN+IqAGp9fbebD+uwd
+L/asW8r5l41YM6kxRtypWl/e0PojQCm50WjcFEmtvYDXHu1T4HsXwm3/BM8iHzcJ
+/DjI317+RDZbyoe5+iiOMr0v7IKlkySiXqIj8+MhHv7B7D70ALDcSJiGXNuSOfqR
+n9GKM8p8r+R9anVFf6Fsfe2ztmvtCdoTPlp3PFFm54Ix0/putKfkbd74VpRYp9wB
+2A9NBPt81H2OiOkcz0w/Dld3S6e90HT0lUKibgeu4mlKvuJyG8+4s37asD89/1ik
+MgV7GHxerl+grH54Ta5ofM44BJLn0ndY4fee7bCbZoLWaLmXdcgJg7gshDK96R6E
+eTt05UZBAoAarCmK
+-----END PGP SIGNATURE-----
