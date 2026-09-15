@@ -1,0 +1,81 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump to v0.63.17 (#1234)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.metabase.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/metabase
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/metabase
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: v0.63.17
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+description: Metabase open-source BI platform with visual data exploration and PostgreSQL
+  metadata store
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/metabase.png
+keywords:
+- - metabase
+- - bi
+- - analytics
+- - dashboard
+- - visualization
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: metabase
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/metabase/metabase
+type: application
+version: 1.2.29
+
+...
+files:
+  metabase-1.2.29.tgz: sha256:71e3edd3869d0cfd848db78a38b4af9d497f8c14a64c3a0233459e237f0fe15d
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqW/VCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnExO6yELswEmLPb954XFK9tW8JnIxhV8uEa9GXDQ3SY8W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAai8QAKKl/esrCVWBc06vxxbvHKjzEmRc
+fnT5TZspDLXnibEyt3eQkA/I1Wan0TxM3rztFTBJn8kix5OwWuJvxmCLmAOs6A8O
+3BX8r/fnnVngBAzMEiDWFEoBJTMbxO2TWnERUEHkuqY5qfRJJlVNn0tp36bZhJJv
+t6fNfdcML7jDMVRyzx8bfMWNLJixd827DoKNzPBzjp07tvOwpj9zeNw7BeSKJ2ER
+Ls0/MuCl/W65AqHP6Wg0gm0A6G1/PySld9x+X9JIziCI4NqfMAYV1HpkiOGmZEzZ
+G0qbmZ11vM3N/B90MwJFUjyBMwxwsKj6VNT77T73h2o13iAyJDKzm3AYezZMrvGU
+DhpCn5A0+tBBmfuv2HjAISakx6GB4FOHiG4CDrsqZQ98EzZKsgIZ1ltF1Shyk625
+wV2peZhb2YNlFawAuldL4rbWHUpKeZuGhuTAVcLkw8nP2Z2Ig062bCSS+W4AzKuq
+dIGWBj14p8Y7IeA9+xGe/D2UxpAkjfy5CHMtLSByFyllBC/9hYbWUBnrZnmXGBJD
+dWk5zKeo/Hsauine/A6nrUwTQfJZoFpCsZw1aGMpvWkMHU9gNZIdk3WztP68klSX
+zFekkicJFOsl4VH9nd2ExNQkK7I1MlSB3qRICIlIcTQ+9Qj1raWSEWr7eJc++Wo0
+zP5ederVhSTl7TgW
+-----END PGP SIGNATURE-----
