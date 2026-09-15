@@ -1,0 +1,77 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump upstream to 1.14.5 (#1242)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://dawarich.app
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/dawarich
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.14.5
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: https://repo.helmforge.dev
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: https://repo.helmforge.dev
+  version: 3.0.0
+description: Private location history with native administrator provisioning, PostGIS,
+  queued GPX imports and retained encryption keys.
+home: https://helmforge.dev/docs/charts/dawarich
+icon: https://helmforge.dev/icons/charts/dawarich.png
+keywords:
+- - dawarich
+- - location
+- - gps
+- - postgis
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: dawarich
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/dawarich
+- - https://github.com/Freika/dawarich
+type: application
+version: 1.0.1
+
+...
+files:
+  dawarich-1.0.1.tgz: sha256:c39a5f4f02a211dafdc692906403f9e8e3c7b175b1e72394d0c77b2c254f63df
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqqYZMCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnYKfN4KuFUEn7wuqlpXjOBAWOjFbFNfCr0X4XnlGPAegW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAa08P/iff3kMSzVW/zUeXlQSOeTp+qsYQ
+Hjvgckgn85fdgUeH1AdSJuLEg5MhaA7Mdv3jwcG1CZa1kR+nhsZ4dULPB7sYaOxP
+QmV82vNcGriim0/ki3Qoq9Y/9/KWVwBMvbj3Uh4jhdqcteqpNx1eTMLszke/4AZd
+3ca9kVaaE+V1nXE84VCMiuS3yMoP7xKX+4y7WAQhJUyO0t1P19Y8qZfX7sApwJ+v
+iugBXvuUeA6F2y9CliwpoCp0yPucf/M7WfmAVsXO9tdgmaveiw4CvleRwR30B/OS
+o7v9G8WMhFYchd7RHlxSabArcqPGHiZs9IBjraYeVnUTaBYZR5tAjyCMKWCsLLa5
+bC2sAHMiEI3ISAsG7lAiRzeaPGvOJXmc6Aa6Y3Pk63P53dIT+q8dFHwvxm5AvQze
+QgkKuEuGrWKfudylgazaZnrH6Z/7/s0j2vmksn6OevOEPLWn6WEoG7gJGabR1Aqe
+C0eyFj4Jb6AhRzHLgPX3rVi4z3gNZylPZi7gmY9IX1eUO+LEqdEj2zcO08n2QjJa
+mnjx6qqpE4JzZ8lMcnlpd0rUzgT9LpECcsB8DmSmW4z0PyskXrihv3XJwhhPiW+q
+j3U35dGkMv48ikr5TmejkubZ4ORXOp/0658KU51Rbp8XQoau20dLDjkM0j1nO2Pc
+IOvReOgLnfmWKR+3
+-----END PGP SIGNATURE-----
