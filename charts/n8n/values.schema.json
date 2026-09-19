@@ -118,6 +118,13 @@
         "existingSecretKey": {
           "type": "string",
           "description": "Key in the task runner auth token secret"
+        },
+        "extraEnv": {
+          "type": "array",
+          "description": "Additional environment variables for external task runner containers",
+          "items": {
+            "type": "object"
+          }
         }
       }
     },
