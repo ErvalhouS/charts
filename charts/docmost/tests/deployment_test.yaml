@@ -129,3 +129,37 @@ tests:
           content:
             name: DISABLE_TELEMETRY
             value: "true"
+
+  - it: should default to Recreate while the ReadWriteOnce uploads PVC is in use
+    template: templates/deployment.yaml
+    asserts:
+      - equal:
+          path: spec.strategy.type
+          value: Recreate
+
+  - it: should leave the strategy unset when uploads live in S3
+    template: templates/deployment.yaml
+    set:
+      storage.mode: s3
+      storage.s3.bucket: docmost
+      storage.s3.accessKey: key
+      storage.s3.secretKey: secret
+    asserts:
+      - notExists:
+          path: spec.strategy
+
+  - it: should honour an explicit strategy over the storage-derived default
+    template: templates/deployment.yaml
+    set:
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxSurge: 1
+          maxUnavailable: 0
+    asserts:
+      - equal:
+          path: spec.strategy.type
+          value: RollingUpdate
+      - equal:
+          path: spec.strategy.rollingUpdate.maxSurge
+          value: 1
