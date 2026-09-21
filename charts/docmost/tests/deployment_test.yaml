@@ -137,6 +137,19 @@ tests:
           path: spec.strategy.type
           value: Recreate
 
+  - it: should default to Recreate for an existing claim with the managed PVC disabled
+    template: templates/deployment.yaml
+    set:
+      storage.local.enabled: false
+      storage.local.existingClaim: docmost-uploads
+    asserts:
+      - equal:
+          path: spec.strategy.type
+          value: Recreate
+      - equal:
+          path: spec.template.spec.volumes[0].persistentVolumeClaim.claimName
+          value: docmost-uploads
+
   - it: should leave the strategy unset when uploads live in S3
     template: templates/deployment.yaml
     set:
