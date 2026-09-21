@@ -94,7 +94,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ include "docmost.appSecretSecretName" . }}
-                  key: {{ include "docmost.appSecretKey" . }}
+                  key: {{ include "docmost.appSecretKey" . | quote }}
             - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:

@@ -144,3 +144,13 @@ tests:
               secretKeyRef:
                 name: external-docmost
                 key: app_secret
+
+  - it: should keep a numeric-looking app secret key a string
+    template: templates/deployment.yaml
+    set:
+      docmost.existingSecret: external-docmost
+      docmost.existingSecretAppSecretKey: "12345"
+    asserts:
+      - equal:
+          path: spec.template.spec.containers[0].env[1].valueFrom.secretKeyRef.key
+          value: "12345"
