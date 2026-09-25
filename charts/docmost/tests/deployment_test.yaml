@@ -154,6 +154,16 @@ tests:
       - equal:
           path: spec.template.spec.containers[0].env[1].valueFrom.secretKeyRef.key
           value: "12345"
+
+  - it: should keep a numeric-looking existing secret name a string
+    template: templates/deployment.yaml
+    set:
+      docmost.existingSecret: "12345"
+    asserts:
+      - equal:
+          path: spec.template.spec.containers[0].env[1].valueFrom.secretKeyRef.name
+          value: "12345"
+
   - it: should default to Recreate while the ReadWriteOnce uploads PVC is in use
     template: templates/deployment.yaml
     asserts:
