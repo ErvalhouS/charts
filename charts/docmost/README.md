@@ -165,6 +165,7 @@ backup:
 | Key | Default | Description |
 |-----|---------|-------------|
 | `replicaCount` | `1` | Number of Docmost application pods. Values greater than `1` require `storage.mode=s3` |
+| `strategy` | `{}` | Deployment update strategy. Defaults to `Recreate` while the local uploads PVC is in use, since that volume is `ReadWriteOnce`, and to `RollingUpdate` otherwise |
 | `image.repository` | `docker.io/docmost/docmost` | Docmost container image repository |
 | `image.tag` | `0.96.0` | Docmost image tag |
 | `docmost.appUrl` | `""` | External Docmost URL |
